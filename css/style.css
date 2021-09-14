@@ -1,0 +1,163 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -16vw, 48vw;
+    background-position-y: -70vh, 52vh;
+}
+
+.profile-card {
+    background-color: white;
+    height: 370px;
+    width: 350px;
+    margin: 12% auto;
+    border-radius: 15px;
+    box-shadow: 7px 15px 35px -20px hsl(229deg 23% 23%);  
+}
+
+.profile-card .card-top {
+    height: 36%;
+    width: 100%;
+    background-image: url("../images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;   
+}
+
+.profile-card .card-middle {
+    height: 40%;
+    width: 100%;
+    background-color:white;
+}
+
+.card-middle .card-image {
+    margin: auto;
+    position: relative;
+    top: -35%;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid white;
+    background-color: white;
+}
+
+.card-middle .name {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    text-align: center;
+    top: -34%;
+    position: relative;
+}
+
+.card-middle .age {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.card-middle .city {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    top: -40%;
+    position: relative;
+}
+
+.profile-card .card-bottom {
+    height: 24%;
+    width: 100%;
+    border-top: 1px solid hsl(0deg 0% 59% / 30%);
+}
+
+.card-bottom .bottom {
+    height: 24%;
+    width: 83%;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+.card-bottom .bottom .followers {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    height: 24%;
+}
+
+.card-bottom .bottom .likes {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: 24%;
+}
+
+.card-bottom .bottom .photos {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    height: 24%;
+}
+
+.card-bottom .bottom .data-number {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin-top: 25%;
+}
+
+.card-bottom .bottom .data {
+    font-size: 10px;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    margin-top: -14%;
+    letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 1440px) {
+    body {    
+        background-position-x: -43vw, 43vw;
+        background-position-y: -35vh, 55vh;
+        background-size: 100% 69%, 135% 100%;
+    }
+
+    .profile-card {
+        height: 56%;
+        width: 86%;
+        margin: 39% auto 0 auto;
+        border-radius: 40px;
+        box-shadow: 5px 20px 60px -38px hsl(229deg 23% 23%);
+    }
+
+    .profile-card .card-top {
+        border-radius: 40px 40px 0 0;
+        height: 37%;
+    }
+
+    .card-middle .card-image {
+        width: 256px;
+        top: -36%;
+        border: 12px solid white;
+    }
+
+    .card-middle .name {
+        font-size: 47px;
+        top: -37%;
+    }
+
+    .card-middle .city {
+        font-size: 37px;
+        top: -39%;
+    }
+
+    .card-bottom .bottom .data-number {
+        font-size:47px ;
+    }
+
+    .card-bottom .bottom .data {
+        font-size: 27px;
+        letter-spacing: 3px;
+    }
+}
+
+  

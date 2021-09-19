@@ -4,8 +4,8 @@ body {
   background-color: #19a2ae;
   background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position-x: -16vw, 48vw;
-  background-position-y: -70vh, 52vh;
+  background-position-x: -45%, 136%;
+  background-position-y: 209%, -156%;
 }
 body .profile-card {
   background-color: white;
@@ -105,9 +105,9 @@ body .profile-card .card-bottom .bottom .data {
 
 @media only screen and (max-device-width: 375px) {
   body {
-    background-position-x: -44vw, 44vw;
-    background-position-y: -36vh, 52vh;
-    background-size: 100% 71%, 175% 80%;
+    background-position-x: 130%, -51%;
+    background-position-y: 293%, 256%;
+    background-size: 233% 123%, 187% 80%;
     display: flex;
     justify-content: center;
     align-items: center;

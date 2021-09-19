@@ -15,8 +15,8 @@ body {
     background-color: $dark-cyan-color;
     background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
     background-repeat: no-repeat, no-repeat;
-    background-position-x: -16vw, 48vw;
-    background-position-y: -70vh, 52vh;
+    background-position-x: -45%, 136%;
+    background-position-y: 209%, -156%;
 
     .profile-card {
         background-color: $white-color;
@@ -24,7 +24,7 @@ body {
         width: 350px;
         margin: 12% auto;
         border-radius: 15px;
-        box-shadow: 7px 15px 35px -20px hsl(229deg 23% 23%);  
+        box-shadow: 7px 15px 35px -20px $very-dark-desaturated-blue-color;  
 
         .card-top {
             height: 36%;
@@ -130,9 +130,9 @@ body {
 
 @media only screen and (max-device-width: 375px) {
     body {    
-        background-position-x: -44vw, 44vw;
-        background-position-y: -36vh, 52vh;
-        background-size: 100% 71%, 175% 80%;
+        background-position-x: 130%, -51%;
+        background-position-y: 293%, 256%;
+        background-size: 233% 123%, 187% 80%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -143,7 +143,7 @@ body {
             width: 326px;
             margin: 0 auto;
             border-radius: 15px;
-            box-shadow: 5px 20px 60px -38px hsl(229deg 23% 23%);
+            box-shadow: 5px 20px 60px -38px $very-dark-desaturated-blue-color;
 
             .card-top {
                 border-radius: 15px 15px 0 0;

@@ -1,0 +1,176 @@
+$font-stack: 'Kumbh Sans', sans-serif;
+$font-18: 18px;
+$dark-cyan-color: hsl(185, 75%, 39%);
+$very-dark-desaturated-blue-color: hsl(229, 23%, 23%);
+$dark-grayish-blue-color: hsl(227, 10%, 46%);
+$dark-gray-color: hsl(0deg 0% 59% / 30%);
+$gray-color: hsl(227, 10%, 46%);
+$white-color: white;
+$shadow-color: rgb(0 0 0 / 4%);
+$card-color: rgb(0 0 0 / 1%);
+
+body {
+    font-family: $font-stack;
+    margin: 0;
+    background-color: $dark-cyan-color;
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -45%, 136%;
+    background-position-y: 209%, -156%;
+
+    .profile-card {
+        background-color: $white-color;
+        height: 370px;
+        width: 350px;
+        margin: 12% auto;
+        border-radius: 15px;
+        box-shadow: 7px 15px 35px -20px $very-dark-desaturated-blue-color;  
+
+        .card-top {
+            height: 36%;
+            width: 100%;
+            background-image: url("../images/bg-pattern-card.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 15px 15px 0 0;   
+        }
+
+        .card-middle {
+            height: 40%;
+            width: 100%;
+            background-color: $card-color;
+            box-shadow: 0px -3px 2px $shadow-color;
+
+            .card-image {
+                margin: auto;
+                position: relative;
+                top: -35%;
+                display: block;
+                border-radius: 50%;
+                border: 5px solid $white-color;
+                background-color: $white-color;
+                box-shadow: -2px -12px 10px $shadow-color;
+            }
+
+            .name {
+                font-size: $font-18;
+                font-weight: 700;
+                color: $very-dark-desaturated-blue-color;
+                text-align: center;
+                top: -34%;
+                position: relative;
+            }
+
+            .age {
+                color: $gray-color;
+                font-weight: 400;
+            }
+            
+            .city {
+                color: $gray-color;
+                font-weight: 400;
+                font-size: 14px;
+                text-align: center;
+                top: -40%;
+                position: relative;
+            } 
+        }
+
+        .card-bottom {
+            height: 24%;
+            width: 100%;
+            background-color: $card-color;
+            border-top: 1px solid $dark-gray-color;
+
+            .bottom {
+                height: 24%;
+                width: 83%;
+                margin: 0 auto;
+                padding: 0 22px;
+
+                .followers {
+                    display: inline-block;
+                    text-align: center;
+                    width: 33%;
+                    height: 24%;
+                }
+
+                .likes {
+                    display: inline-block;
+                    text-align: center;
+                    width: 30%;
+                    height: 24%;
+                }
+
+                .photos {
+                    display: inline-block;
+                    text-align: center;
+                    width: 33%;
+                    height: 24%;
+                }
+
+                .data-number {
+                    font-size: $font-18;
+                    font-weight: 700;
+                    color: $very-dark-desaturated-blue-color;
+                    margin-top: 25%;
+                }
+                
+                .data {
+                    font-size: 11px;
+                    font-weight: 400;
+                    color: $dark-grayish-blue-color;
+                    margin-top: -14%;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-device-width: 375px) {
+    body {    
+        background-position-x: 130%, -51%;
+        background-position-y: 293%, 256%;
+        background-size: 233% 123%, 187% 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 250px;
+
+        .profile-card {
+            height: 374px;
+            width: 326px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 5px 20px 60px -38px $very-dark-desaturated-blue-color;
+
+            .card-top {
+                border-radius: 15px 15px 0 0;
+                height: 37%;
+            }
+
+            .card-middle {
+                height: 39%;
+                width: 100%;
+                background-color: $white-color;
+
+                .card-image {
+                    width: 96px;
+                    top: -36%;
+                    border: 5px solid $white-color;
+                }
+            
+                .name {
+                    font-size: $font-18;
+                    top: -35%;
+                }
+            
+                .city {
+                    font-size: 14px;
+                    top: -41%;
+                }
+            }
+        }
+    }   
+}
